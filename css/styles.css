@@ -512,7 +512,7 @@ figcaption {
 .submit-box {
   background-color: var(--background-gray);
   width: 358px;
-  padding-left: 16px;;
+  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -596,6 +596,26 @@ figcaption {
 
 svg {
   vertical-align: middle;
+}
+
+.modal-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--text-black);
+}
+
+.modal-submit-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--logo-white);
+  background: var(--logo-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 76px;
 }
 
 /* PORTFOLIO */
