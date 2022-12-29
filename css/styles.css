@@ -415,6 +415,7 @@ figcaption {
 
 .footer-container-item1 {
   padding: 60px 0;
+  white-space: nowrap;
 }
 
 .logo-ftr {
@@ -464,6 +465,7 @@ figcaption {
 .footer-container-item2 {
   padding: 72px 0 100px;
 }
+
 .header-tertiary-footer {
   font-size: 14px;
   line-height: 1.14;
@@ -499,26 +501,28 @@ figcaption {
 .footer-container-item3 {
   padding: 72px 0 94px;
   margin-left: 8px;
+  width: 100%;
 }
 
 .newsletter {
   display: flex;
   gap: 12px;
 }
+
 .submit-box {
   background-color: var(--background-gray);
   width: 358px;
-  padding: 0;
+  padding-left: 16px;;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  width: 100%;
 }
 
 ::placeholder {
   font-weight: 400;
   line-height: 1.25;
   color: var(--footer-60-white);
-  padding: 15px 295px 15px 16px;
 }
 
 .footer-submit-button {
@@ -529,13 +533,16 @@ figcaption {
   background: var(--logo-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
-  padding: 13px 28px 13px 42px;
+  padding: 10px 28px 10px 42px;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .send-icon {
   fill: var(--logo-white);
-  margin-left: 13px;
+  margin-left: 24px;
 }
 
 /* OKNO MODALNE */
