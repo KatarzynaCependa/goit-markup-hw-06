@@ -553,12 +553,12 @@ figcaption {
   transition: opacity 500ms 50ms ease, visibility 500ms 50ms ease, transform 500ms 50ms ease;
 }
 
-.is-hidden {
+/* .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
   transition: opacity 250ms 50ms ease, visibility 250ms 50ms ease, transform 250ms 50ms ease;
-}
+} */
 
 .modal {
   width: 528px;
