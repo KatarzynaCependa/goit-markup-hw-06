@@ -83,7 +83,7 @@ figcaption {
   color: var(--logo-blue);
 }
 
-.nav-list {
+.list {
   list-style: none;
 }
 
@@ -539,6 +539,7 @@ figcaption {
   display: flex;
   align-items: center;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .send-icon {
@@ -606,18 +607,26 @@ svg {
   text-align: center;
 }
 
+.modal-form-container {
+  margin-bottom: 20px;
+}
+
 .modal-flex-list {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 10px;
   gap: 4px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon {
-  position: absolute;
-  display: flex;
-  top: 50%;
+.modal-flex-list:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.modal-flex-list:focus-within {
+  fill: var(--logo-blue);
 }
 
 .modal-flex-list > label {
@@ -640,13 +649,41 @@ svg {
   padding: 11px 0 11px 41px;
 }
 
+.modal-flex-list > textarea {
+  padding: 12px 16px;
+  resize: none;
+}
+
 .modal-flex-list ::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--modal-placeholder);
-  padding: 12px 0 0 16px;
+}
+
+.modal-icon {
+  position: absolute;
+  display: flex;
+  top: 43%;
+  left: 52px;
+}
+
+.modal-text-box {
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-text-box:focus-within {
+  border-color: var(--logo-blue);
+  outline: none;
+}
+
+.declaration-container {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .statement {
@@ -656,12 +693,12 @@ svg {
   letter-spacing: 0.03em;
   color: var(--text-light-gray);
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .statement span {
   color: var(--logo-blue);
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .modal-submit-button {
@@ -675,6 +712,8 @@ svg {
   border-radius: 4px;
   padding: 10px 76px;
   border: none;
+  cursor: pointer;
+  margin: 0 164px;
 }
 
 /* PORTFOLIO */
