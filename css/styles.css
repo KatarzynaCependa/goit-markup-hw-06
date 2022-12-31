@@ -686,6 +686,28 @@ svg {
   justify-content: center;
 }
 
+.flex-declaration-container-item {
+  display: flex;
+  align-items: center;
+}
+
+.default-checkbox:checked + .active-custom-checkbox {
+  visibility: visible;
+}
+
+.default-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.not-active-custom-checkbox {
+  position: absolute;
+}
+
+.active-custom-checkbox {
+  visibility: hidden;
+}
+
 .statement {
   font-weight: 400;
   font-size: 14px;
@@ -693,9 +715,10 @@ svg {
   letter-spacing: 0.03em;
   color: var(--text-light-gray);
   text-align: center;
+  margin-left: 7px;
 }
 
-.statement span {
+.statement a {
   color: var(--logo-blue);
   text-decoration: underline;
   cursor: pointer;
